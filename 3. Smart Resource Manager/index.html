@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Resource Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--sidebar-->
+    <aside class="sidebar">
+      <h2>SRM</h2>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Resources</li>
+        <li>Allocation</li>
+        <li>Reports</li>
+        <li>Settings</li>
+      </ul>
+    </aside>
+    <!--main content-->
+    <main class="main">
+      <!--header-->
+      <header class="topbar">
+        <h1>Resource Overview</h1>
+        <p>Monitor allocation & utilization</p>
+      </header>
+      <!--cards-->
+      <section class="cards">
+        <div class="card">
+          <h3>Total Resources</h3>
+          <p class="count">24</p>
+        </div>
+        <div class="card">
+          <h3>Available</h3>
+          <p class="count green">10</p>
+        </div>
+        <div class="card">
+          <h3>Allocated</h3>
+          <p class="count red">14</p>
+        </div>
+      </section>
+      <!--Resource List-->
+      <section class="resources">
+        <h2>Resource Utilization</h2>
+        <div class="resource">
+          <span>Frontend Team</span>
+          <div class="progress">
+            <div class="bar bar-80"></div>
+          </div>
+          <span>80%</span>
+        </div>
+
+        <div class="resource">
+          <span>Backend Team</span>
+          <div class="progress">
+            <div class="bar bar-60"></div>
+          </div>
+          <span>60%</span>
+        </div>
+
+        <div class="resource">
+          <span>Design Team</span>
+          <div class="progress">
+            <div class="bar bar-40"></div>
+          </div>
+          <span>40%</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

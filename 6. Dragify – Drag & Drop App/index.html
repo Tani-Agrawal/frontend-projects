@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragify - Drag & Drop App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dragify</h1>
+    <div class="add-card">
+      <input type="text" id="cardInput" placeholder="New task" />
+      <button id="addCardBtn">Add</button>
+    </div>
+
+    <div class="board">
+      <div class="column" id="todo">
+        <h2>To Do</h2>
+        <div class="card" draggable="true">Learn JS</div>
+        <div class="card" draggable="true">Pratice Drag</div>
+      </div>
+
+      <div class="column" id="doing">
+        <h2>Doing</h2>
+      </div>
+
+      <div class="column" id="done">
+        <h2>Done</h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

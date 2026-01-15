@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+.add-card {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-card input {
+  flex: 1;
+  padding: 8px;
+}
+
+.add-card button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+}
+
+.coloumn {
+  background: #fff;
+  padding: 10px;
+  width: 250px;
+  border-radius: 6px;
+  min-height: 300px;
+}
+
+.card {
+  background: #667eea;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: grab;
+}
+.column.drag-over {
+  border: 2px dashed #667eea;
+  background: #f0f3ff;
+}

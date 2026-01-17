@@ -1,0 +1,102 @@
+/*GLOBAL*/
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #0f172a; /* editor dark */
+  color: #e5e7eb;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+p {
+  margin-top: 0;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/*CONTROLS*/
+.controls {
+  margin: 20px auto;
+  padding: 16px;
+  max-width: 900px;
+  background: #1e293b;
+  border-radius: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.controls label {
+  font-size: 13px;
+  margin-right: 4px;
+  color: #cbd5f5;
+}
+
+/* sliders */
+input[type="range"] {
+  width: 160px;
+}
+
+/*BUTTONS*/
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #334155;
+  color: #fff;
+  font-size: 13px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #475569;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* special buttons */
+#resetBtn {
+  background: #ef4444;
+}
+
+#resetBtn:hover {
+  background: #dc2626;
+}
+
+#downloadBtn {
+  background: #22c55e;
+  color: #022c22;
+}
+
+#downloadBtn:hover {
+  background: #16a34a;
+}
+
+/*CANVAS*/
+canvas {
+  margin: 30px auto 0;
+  display: block;
+  background: #ffffff;
+  max-width: 90%;
+  border-radius: 14px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/*RESPONSIVE*/
+@media (max-width: 600px) {
+  input[type="range"] {
+    width: 120px;
+  }
+
+  .controls {
+    padding: 12px;
+  }
+}

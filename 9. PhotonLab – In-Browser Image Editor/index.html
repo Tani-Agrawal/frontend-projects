@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotonLab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>PhotonLab</h1>
+    <p>In-Browser Image Editor</p>
+
+    <!--upload-->
+    <input type="file" id="upload" accept="image/*" />
+
+    <!--controls-->
+    <div class="controls">
+      <!--brightness-->
+      <label>Brightness</label>
+      <input type="range" min="-100" max="100" id="brightness" value="0" />
+
+      <!--contrast-->
+      <label>Contrast</label>
+      <input type="range" id="contrast" min="-100" max="100" value="0" />
+
+      <!--Grayscale btn-->
+      <button id="grayscaleBtn">Grayscale</button>
+
+      <!--rotate btn-->
+      <button id="rotateBtn">Rotate 90°</button>
+
+      <!--flip horizontal btn-->
+      <button id="flipHBtn">Flip Horizontal</button>
+
+      <!--flip vertical btn-->
+      <button id="flipVBtn">Flip Vertical</button>
+
+      <!--undo-->
+      <button id="undoBtn">Undo</button>
+
+      <!--redo-->
+      <button id="redoBtn">Redo</button>
+
+      <!--reset btn-->
+      <button id="resetBtn">Reset</button>
+
+      <!--download btn-->
+      <button id="downloadBtn">Download</button>
+    </div>
+
+    <!--canvas-->
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

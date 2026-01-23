@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CanvasPlay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CanvasPlay</h1>
+    <p>Random Prompt & Visual Idea Engine</p>
+
+    <div class="prompt-box">
+      <h2 id="promptTitle">Click Generate</h2>
+      <p id="promptText"></p>
+      <button id="generateBtn">Generate Idea</button>
+    </div>
+    
+    <div class="canvas-controls">
+      <label>
+        Color
+        <input type="color" id="colorPicker" value="#0f172a" />
+      </label>
+
+      <label>
+        Size
+        <input type="range" id="sizeSlider" min="1" max="20" value="3" />
+      </label>
+
+      <button id="clearBtn">Clear</button>
+      <button id="saveBtn">Save Image</button>
+    </div>
+
+    <!-- MAIN CANVAS -->
+    <canvas id="ideaCanvas" width="600" height="400"></canvas>
+
+    <script src="./data/prompts.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
